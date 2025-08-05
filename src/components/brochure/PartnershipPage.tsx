@@ -2,12 +2,12 @@ import { Shield, Target, Clock } from 'lucide-react';
 
 export const PartnershipPage = () => {
   return (
-    <div className="brochure-page h-full relative bg-white paper-texture">
+    <div className="brochure-page min-h-full relative bg-white paper-texture">
       {/* Header Line */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-gold-accent to-transparent"></div>
       
       {/* Content */}
-      <div className="p-16 h-full flex flex-col justify-center print:p-12">
+      <div className="p-16 min-h-full flex flex-col justify-center print:p-12">
         {/* Main Headline */}
         <div className="text-center mb-16">
           <h1 className="font-cinzel text-display font-bold text-navy mb-4 leading-tight">

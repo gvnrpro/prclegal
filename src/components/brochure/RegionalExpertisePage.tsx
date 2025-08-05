@@ -25,12 +25,12 @@ export const RegionalExpertisePage = () => {
   ];
 
   return (
-    <div className="brochure-page h-full relative bg-white paper-texture">
+    <div className="brochure-page min-h-full relative bg-white paper-texture">
       {/* Header Line */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-gold-accent to-transparent"></div>
       
       {/* Split Layout */}
-      <div className="h-full flex">
+      <div className="min-h-full flex">
         {/* Left Side - Image */}
         <div className="flex-1 min-w-0 relative bg-gradient-to-br from-grey-light via-white to-grey-light">
           <img 

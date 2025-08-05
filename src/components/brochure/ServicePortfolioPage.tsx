@@ -65,12 +65,12 @@ export const ServicePortfolioPage = () => {
   ];
 
   return (
-    <div className="brochure-page h-full relative">
+    <div className="brochure-page min-h-full relative">
       {/* Header Line */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-gold-accent to-transparent"></div>
       
       {/* Content */}
-      <div className="p-16 h-full print:p-12">
+      <div className="p-16 min-h-full print:p-12">
         <h1 className="font-cinzel text-display font-bold text-navy mb-10">
           Our Legal Services
         </h1>
