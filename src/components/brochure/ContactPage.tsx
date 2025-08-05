@@ -1,5 +1,4 @@
 import { Phone, Mail, Globe, Scale, Clock, Building } from 'lucide-react';
-import qrCodeImage from '@/assets/qr-code.png';
 
 export const ContactPage = () => {
   return (
@@ -87,7 +86,7 @@ export const ContactPage = () => {
           <div className="text-center">
             <div className="w-52 h-52 bg-gradient-to-br from-navy-primary to-navy-deep rounded-2xl flex items-center justify-center mb-8 premium-shadow relative overflow-hidden print:w-48 print:h-48 print:shadow-none">
               <img 
-                src={qrCodeImage} 
+                src="/lovable-uploads/qr-code-contact.png" 
                 alt="QR Code for instant access" 
                 className="w-44 h-44 object-contain print:w-40 print:h-40"
               />
