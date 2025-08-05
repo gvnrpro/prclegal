@@ -1,26 +1,5 @@
 import { Phone, Mail, Globe, Scale, Clock, Building } from 'lucide-react';
-import logoIcon from '/lovable-uploads/8bed513d-4aba-454c-b47a-e6c98c3b7720.png'; // Make sure this path is correct
-
-// --- NEW BRANDED QR CODE COMPONENT ---
-// This component generates a functional QR code with your logo in the center.
-const BrandedQrCode = () => (
-  <div className="relative w-36 h-36">
-    <svg viewBox="0 0 148 148" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path fill="transparent" d="M0 0h148v148H0z" />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M24 24h40v40H24V24Zm8 8h24v24H32V32ZM84 24h40v40H84V24Zm8 8h24v24H92V32ZM24 84h40v40H24V84Zm8 8h24v24H32V92Zm100 48v-8h-4v4h-4v4h8Zm-8-8h-4v4h4v-4Zm-4-4v-4h-4v4h4Zm-4-4h-4v4h-4v4h8v-8Zm-4-4v-4h-4v4h4Zm-4-4v-4h-4v4h4Zm-4-4h-4v4h-4v4h-4v4h12v-8Zm-4-4v-4h-4v4h4Zm-4-4h-4v4h-4v4h8v-8Zm-4-4h-4v4h4v-4Zm-4-4v-4h-4v4h4Zm-4-4h-4v4h-4v4h8v-8Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h-4v4h-4v4h-4v4h16v-8Zm-4-4v-4h-4v4h4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h-4v4h8v-8Zm-4-4v-4h-4v4h4Zm-4-4h-4v4h-4v4h-4v4h12v-8Zm-4-4v-4h-4v4h4Zm-4-4h-4v4h-4v4h-4v4h-4v4h-4v4h24v-8Zm-4-4v-4h-4v4h4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h-4v4h8v-8Zm-4-4v-4h-4v4h4Zm-4-4h-4v4h-4v4h8v-8Zm-4-4v-4h-4v4h4Zm-4-4h-4v4h4v-4Zm4 4v4h4v-4h-4Zm4 4h4v-4h-4v4Zm4 4v4h4v-4h-4Zm4 4h4v-4h-4v4Zm-4 4v4h4v-4h-4Zm-4 4h4v-4h-4v4Zm-4 4v4h4v-4h-4Zm-4 4h4v-4h-4v4Zm-4 4h4v-4h-4v4Zm-4 4h4v-4h-4v4Zm-4 4v4h4v-4h-4Zm0 4v4h4v-4h-4Zm4 4h4v-4h-4v4Zm4 4v4h4v-4h-4Zm4 4h4v-4h-4v4Zm4 4h4v-4h-4v4Zm4 4h4v-4h-4v4Zm4 4h4v-4h-4v4Zm4 4v4h4v-4h-4Zm4 4v4h4v-4h-4Zm4 4v4h4v-4h-4Zm4 4v4h4v-4h-4Zm4 4v4h4v-4h-4Zm-4 4h4v-4h-4v4Zm-4 4h4v-4h-4v4Zm-4 4h4v-4h-4v4Zm-4 4h4v-4h-4v4Zm-4 4h4v-4h-4v4Zm-4 4h4v-4h-4v4Zm-4 4h4v-4h-4v4Zm-4 4v4h4v-4h-4Zm-4 4v4h4v-4h-4Zm-4 4v4h4v-4h-4Zm-4 4v4h4v-4h-4Zm-4 4v4h4v-4h-4Zm0 4h4v-4h-4v4Zm4-4v4h4v-4h-4Zm4 4h4v-4h-4v4Zm4 4v4h4v-4h-4Zm4 4h4v-4h-4v4Zm4-4v4h4v-4h-4Zm4-4v4h4v-4h-4Zm4-4v4h4v-4h-4Zm4 4h4v-4h-4v4Zm4 4v4h4v-4h-4Zm4 4v4h4v-4h-4Zm4 4v4h4v-4h-4Zm0-4v-4h-4v4h4Zm-4-4h4v-4h-4v4Zm-4-4v4h4v-4h-4Zm-4-4v4h4v-4h-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4v4h4v-4h-4Zm-4-4h-4v4h4v-4Zm-4-4v4h4v-4h-4Zm-4-4v4h4v-4h-4Zm-4-4v4h4v-4h-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4v4h4v-4h-4Zm0-4v-4h-4v4h4Zm4-4v4h4v-4h-4Zm4-4v4h4v-4h-4Zm4-4v4h4v-4h-4Zm4-4h-4v4h4v-4Zm4-4h-4v4h4v-4Zm4-4v-4h-4v4h4Zm4-4v-4h-4v4h4Zm4-4v-4h-4v4h4Zm4-4v-4h-4v4h4Zm4-4h-4v4h4v-4Zm0 4v4h4v-4h-4Zm-4 4h-4v4h4v-4Zm-4 4v-4h-4v4h4Zm-4 4v-4h-4v4h4Zm-4 4v-4h-4v4h4Zm-4 4v-4h-4v4h4Zm-4 4h-4v4h4v-4Zm-4 4h-4v4h4v-4Zm-4 4h-4v4h4v-4Zm-4 4h-4v4h4v-4Zm-4 4v-4h-4v4h4Zm-4 4v-4h-4v4h4Zm-4 4v-4h-4v4h4Zm-4 4v-4h-4v4h4Zm0-4h4v-4h-4v4Zm4 4v4h4v-4h-4Zm4-4h4v-4h-4v4Zm4-4h4v-4h-4v4Zm4-4h4v-4h-4v4Zm4-4h4v-4h-4v4Zm4-4h4v-4h-4v4Zm4-4v4h4v-4h-4Zm4-4v4h4v-4h-4Zm4-4v4h4v-4h-4Zm4-4v4h4v-4h-4Zm4-4v4h4v-4h-4Zm4-4v4h4v-4h-4Zm4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4v4h4v-4h-4Zm-4-4v4h4v-4h-4Zm-4-4v4h4v-4h-4Zm-4-4v4h4v-4h-4Zm-4-4v4h4v-4h-4Zm-4-4v4h4v-4h-4Zm-4-4v4h4v-4h-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4v4h4v-4h-4Zm0-4h4v-4h-4v4Zm4-4v4h4v-4h-4Zm4-4v4h4v-4h-4Zm4-4v4h4v-4h-4Zm4-4v4h4v-4h-4Zm4-4v4h4v-4h-4Zm4-4v4h4v-4h-4Zm4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4v4h4v-4h-4Zm0-4h4v-4h-4v4Zm4-4v4h4v-4h-4Zm4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm0-4v-4h-4v4h4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Zm-4-4h-4v4h4v-4Z"
-        fill="white"
-      />
-    </svg>
-    <div className="absolute inset-0 flex items-center justify-center">
-      <div className="w-[30%] h-[30%] bg-white flex items-center justify-center">
-        <img src={logoIcon} alt="Precedential Logo" className="w-[90%] h-[90%]" />
-      </div>
-    </div>
-  </div>
-);
+import qrCodeImage from '@/assets/qr-code.png';
 
 export const ContactPage = () => {
   return (
@@ -31,7 +10,21 @@ export const ContactPage = () => {
       {/* Abstract Skyline Background */}
       <div className="absolute inset-0 opacity-5">
         <svg width="100%" height="100%" viewBox="0 0 800 600" className="fill-navy">
-          {/* ... SVG rects for skyline ... */}
+          <rect x="50" y="400" width="40" height="200" />
+          <rect x="100" y="350" width="35" height="250" />
+          <rect x="145" y="380" width="30" height="220" />
+          <rect x="185" y="320" width="45" height="280" />
+          <rect x="240" y="360" width="25" height="240" />
+          <rect x="275" y="300" width="50" height="300" />
+          <rect x="335" y="340" width="30" height="260" />
+          <rect x="375" y="280" width="40" height="320" />
+          <rect x="425" y="320" width="35" height="280" />
+          <rect x="470" y="360" width="25" height="240" />
+          <rect x="505" y="300" width="45" height="300" />
+          <rect x="560" y="380" width="30" height="220" />
+          <rect x="600" y="340" width="40" height="260" />
+          <rect x="650" y="320" width="35" height="280" />
+          <rect x="695" y="400" width="30" height="200" />
         </svg>
       </div>
 
@@ -90,10 +83,14 @@ export const ContactPage = () => {
             </div>
           </div>
 
-          {/* Enhanced QR Code Section */}
+          {/* QR Code Section */}
           <div className="text-center">
             <div className="w-52 h-52 bg-gradient-to-br from-navy-primary to-navy-deep rounded-2xl flex items-center justify-center mb-8 premium-shadow relative overflow-hidden print:w-48 print:h-48 print:shadow-none">
-              <BrandedQrCode />
+              <img 
+                src={qrCodeImage} 
+                alt="QR Code for instant access" 
+                className="w-44 h-44 object-contain print:w-40 print:h-40"
+              />
             </div>
             <p className="font-montserrat text-body-lg text-navy/80 font-medium mb-3">
               Scan for instant access
@@ -101,12 +98,6 @@ export const ContactPage = () => {
             <p className="font-montserrat text-body text-navy/60">
               Mobile-optimized consultation booking
             </p>
-            
-            <div className="mt-6 text-center">
-              <p className="font-montserrat text-small text-gold-accent font-semibold">
-                Serving Dubai's Legal District
-              </p>
-            </div>
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ export const PartnershipPage = () => {
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-gold-accent to-transparent"></div>
       
       {/* Content */}
-      <div className="p-12 h-full flex flex-col justify-center print:p-10">
+      <div className="p-16 h-full flex flex-col justify-center print:p-12">
         {/* Main Headline */}
         <div className="text-center mb-16">
           <h1 className="font-cinzel text-display font-bold text-navy mb-4 leading-tight">
@@ -17,7 +17,7 @@ export const PartnershipPage = () => {
         </div>
 
         {/* Unlimited Legal Support Section */}
-        <div className="bg-navy-primary text-white rounded-xl p-10 mb-10 border-2 border-gold-accent print:p-8 print:mb-8">
+        <div className="bg-navy-primary text-white rounded-xl p-12 mb-12 border-2 border-gold-accent print:p-10 print:mb-10">
           <div className="text-center mb-10">
             <h2 className="font-cinzel text-headline font-bold text-white mb-6">
               Unlimited Legal Support – One Predictable Price

@@ -32,7 +32,7 @@ export const RegionalExpertisePage = () => {
       {/* Split Layout */}
       <div className="h-full flex">
         {/* Left Side - Image */}
-        <div className="w-3/5 relative bg-gradient-to-br from-grey-light via-white to-grey-light">
+        <div className="flex-1 min-w-0 relative bg-gradient-to-br from-grey-light via-white to-grey-light">
           <img 
             src="/lovable-uploads/f76ae9c9-cca4-4c3f-b532-a3aa8173a5e9.png" 
             alt="UAE Legal Expertise" 
@@ -43,7 +43,7 @@ export const RegionalExpertisePage = () => {
         </div>
         
         {/* Right Side - Content */}
-        <div className="w-2/5 p-10 flex flex-col justify-center bg-white print:p-8">
+        <div className="flex-1 min-w-0 p-12 flex flex-col justify-center bg-white print:p-10">
           <div className="mb-10">
             <h2 className="font-cinzel text-display font-bold text-navy mb-6 leading-tight">
               UAE Legal Expertise

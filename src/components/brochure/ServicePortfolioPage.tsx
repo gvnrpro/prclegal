@@ -70,12 +70,12 @@ export const ServicePortfolioPage = () => {
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-gold-accent to-transparent"></div>
       
       {/* Content */}
-      <div className="p-12 h-full print:p-10">
+      <div className="p-16 h-full print:p-12">
         <h1 className="font-cinzel text-display font-bold text-navy mb-10">
           Our Legal Services
         </h1>
         
-        <div className="grid grid-cols-2 gap-x-10 gap-y-8 max-h-[calc(100%-12rem)]">
+        <div className="grid grid-cols-2 gap-x-10 gap-y-8 overflow-y-auto">
           {services.map((service, index) => (
             <div key={index} className="bg-white rounded-lg p-6 border border-gold-accent/20 shadow-sm print:p-5 print:shadow-none">
               <div className="flex items-center gap-4 mb-4">
