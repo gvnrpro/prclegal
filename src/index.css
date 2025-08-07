@@ -99,10 +99,6 @@
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-elegant: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
     
-    /* Page-turn Animation Variables */
-    --page-turn-duration: 0.6s;
-    --page-perspective: 1000px;
-    
     --radius: 0.25rem;
   }
 
@@ -443,69 +439,5 @@
     pointer-events: none;
     z-index: 1;
     mix-blend-mode: multiply;
-  }
-
-  /* Enhanced Page-Turn Animation */
-  .page-turn-container {
-    perspective: var(--page-perspective);
-    transform-style: preserve-3d;
-  }
-  
-  .page-turn {
-    transition: transform var(--page-turn-duration) cubic-bezier(0.25, 0.8, 0.25, 1);
-    transform-origin: center center;
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
-  }
-  
-  .page-turning {
-    transform: rotateY(-15deg) scale(0.95);
-    box-shadow: 
-      0 0 30px rgba(0, 0, 0, 0.2),
-      0 25px 50px rgba(0, 0, 0, 0.15);
-  }
-  
-  .page-enter {
-    transform: rotateY(15deg) scale(0.95);
-    opacity: 0.8;
-  }
-  
-  .page-enter-active {
-    transform: rotateY(0deg) scale(1);
-    opacity: 1;
-    transition: 
-      transform var(--page-turn-duration) cubic-bezier(0.25, 0.8, 0.25, 1),
-      opacity var(--page-turn-duration) ease-out;
-  }
-  
-  /* 3D Book-like Effect */
-  .book-spine {
-    background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.1) 0%,
-      transparent 2%,
-      transparent 98%,
-      rgba(0, 0, 0, 0.1) 100%
-    );
-  }
-  
-  /* Smooth Navigation Buttons */
-  .nav-button {
-    transition: var(--transition-smooth);
-    backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.9);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-  }
-  
-  .nav-button:hover {
-    background: rgba(255, 255, 255, 1);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  .nav-button:disabled {
-    opacity: 0.5;
-    transform: none;
-    box-shadow: none;
   }
 }
