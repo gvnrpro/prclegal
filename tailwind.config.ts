@@ -52,30 +52,27 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Brochure Color System
+				// New Design System Colors
+				'deep-navy': 'hsl(210, 100%, 10%)',
+				'matte-gold': 'hsl(45, 80%, 55%)',
+				'off-white': 'hsl(45, 20%, 98%)',
+				'pure-white': 'hsl(0, 0%, 100%)',
+				// Legacy Brochure Colors for backwards compatibility
 				navy: {
-					DEFAULT: 'hsl(var(--navy-primary))',
-					primary: 'hsl(var(--navy-primary))'
+					DEFAULT: 'hsl(210, 100%, 10%)',
+					primary: 'hsl(210, 100%, 10%)'
 				},
 				gold: {
-					DEFAULT: 'hsl(var(--gold-accent))',
-					accent: 'hsl(var(--gold-accent))',
-					muted: 'hsl(var(--gold-muted))'
-				},
-				brochure: {
-					'page-bg': 'hsl(var(--brochure-page-bg))',
-					'cover-bg': 'hsl(var(--brochure-cover-bg))',
-					'accent-wing': 'hsl(var(--brochure-accent-wing))',
-					'text-primary': 'hsl(var(--brochure-text-primary))',
-					'text-navy': 'hsl(var(--brochure-text-navy))',
-					'text-white': 'hsl(var(--brochure-text-white))'
+					DEFAULT: 'hsl(45, 80%, 55%)',
+					accent: 'hsl(45, 80%, 55%)',
+					muted: 'hsl(45, 60%, 75%)'
 				}
 			},
 			fontFamily: {
-				'headline': ['var(--font-headline)'],
-				'body': ['var(--font-body)'],
-				'cinzel': ['Cinzel', 'serif'],
-				'montserrat': ['Montserrat', 'sans-serif']
+				'rasputin': ['Ultra', 'serif'], // Dramatic serif alternative to Rasputin
+				'montserrat': ['Montserrat', 'sans-serif'],
+				'headline': ['Ultra', 'serif'],
+				'body': ['Montserrat', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

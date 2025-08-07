@@ -1,7 +1,7 @@
-import { BrochureViewer } from '@/components/BrochureViewer';
+import { BrochureViewerRedesigned } from '@/components/BrochureViewerRedesigned';
 
 const Index = () => {
-  return <BrochureViewer />;
+  return <BrochureViewerRedesigned />;
 };
 
 export default Index;
