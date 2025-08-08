@@ -18,11 +18,11 @@ export const CoverPage = () => {
         </svg>
       </div>
 
-      {/* Main content optimized for print */}
+      {/* Main content optimized for print - Perfect centering */}
       <div className="relative h-full flex flex-col items-center justify-center text-center px-16 z-10 print:px-20">
         
         {/* Logo with print optimization */}
-        <div className="mb-8">
+        <div className="mb-6">
           <img
             src={logoSrc} 
             alt="Precedential Legal Consultancy Logo"
@@ -31,23 +31,23 @@ export const CoverPage = () => {
         </div>
 
         {/* Company Name - Professional print typography */}
-        <h1 className="font-cinzel text-hero font-bold text-white mb-4 tracking-wider leading-none">
+        <h1 className="font-cinzel text-hero font-bold text-white mb-3 tracking-wider leading-none">
           PRECEDENTIAL
         </h1>
-        <h2 className="font-montserrat text-subhead text-white/90 mb-12 tracking-[0.2em] uppercase font-medium">
+        <h2 className="font-montserrat text-subhead text-white/90 mb-8 tracking-[0.2em] uppercase font-medium">
           LEGAL CONSULTANCY
         </h2>
 
         {/* Professional accent line */}
-        <div className="w-32 h-0.5 bg-gold-accent my-6"></div>
+        <div className="w-32 h-0.5 bg-gold-accent mb-8"></div>
 
         {/* Tagline with print optimization */}
-        <p className="font-montserrat text-body-lg text-white/95 leading-relaxed max-w-lg font-light">
+        <p className="font-montserrat text-body-lg text-white/95 leading-relaxed max-w-lg font-light mb-8">
           Setting the Precedent for Your Success
         </p>
 
         {/* Legal credentials indicator */}
-        <div className="mt-12 text-center">
+        <div className="text-center">
           <p className="font-montserrat text-small text-gold-accent font-semibold uppercase tracking-wider">
             UAE Licensed Legal Consultancy
           </p>

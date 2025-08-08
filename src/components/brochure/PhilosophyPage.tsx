@@ -14,19 +14,19 @@ export const PhilosophyPage = () => {
       {/* Header Line */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-gold-accent to-transparent"></div>
       
-      {/* Content - Positioned at bottom right */}
-      <div className="absolute bottom-24 right-20 max-w-xl print:bottom-20 print:right-16 print:max-w-lg">
-        <div className="bg-white/95 backdrop-blur-sm p-10 rounded-lg shadow-2xl print:p-8 print:shadow-none print:border print:border-gold-accent/30">
-          <blockquote className="relative">
-            <div className="absolute -top-4 -left-4 text-4xl font-cinzel text-gold-accent opacity-60 print:text-3xl">"</div>
-            <p className="font-cinzel text-headline font-semibold text-navy leading-tight mb-6 relative z-10 pl-6 print:text-subhead print:pl-4">
+      {/* Content - Centered for better visibility */}
+      <div className="absolute inset-0 flex items-center justify-center p-16">
+        <div className="bg-white/95 backdrop-blur-sm p-12 rounded-lg shadow-2xl max-w-4xl print:p-8 print:shadow-none print:border print:border-gold-accent/30">
+          <blockquote className="relative text-center">
+            <div className="absolute -top-6 -left-6 text-6xl font-cinzel text-gold-accent opacity-60 print:text-4xl">"</div>
+            <p className="font-cinzel text-display font-semibold text-navy leading-tight relative z-10 px-8 print:text-headline print:px-4">
               Legal advice should feel like a strategic partnership—not a last resort.
             </p>
-            <div className="absolute -bottom-4 -right-4 text-4xl font-cinzel text-gold-accent opacity-60 print:text-3xl">"</div>
+            <div className="absolute -bottom-6 -right-6 text-6xl font-cinzel text-gold-accent opacity-60 print:text-4xl">"</div>
           </blockquote>
           
           {/* Accent Line */}
-          <div className="w-20 h-0.5 bg-gold-accent mt-6"></div>
+          <div className="w-32 h-0.5 bg-gold-accent mt-8 mx-auto"></div>
         </div>
       </div>
 

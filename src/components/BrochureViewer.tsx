@@ -91,7 +91,7 @@ export const BrochureViewer = () => {
         </div>
 
         {/* Brochure Pages - Screen: Single page view, Print: All pages */}
-        <div className="w-[297mm] min-h-[210mm] max-w-[95vw] print:max-w-none print:w-full print:h-auto print:block">
+        <div className="w-[297mm] h-[210mm] max-w-[95vw] max-h-[90vh] print:max-w-none print:w-full print:h-auto print:block">
           {/* Screen View - Single Page */}
           <div className={`w-full h-full transition-transform duration-500 ease-in-out print:hidden ${
             isTransitioning ? 'scale-95 opacity-90' : 'scale-100 opacity-100'
