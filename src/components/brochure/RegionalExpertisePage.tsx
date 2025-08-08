@@ -43,7 +43,7 @@ export const RegionalExpertisePage = () => {
         </div>
         
         {/* Right Side - Content */}
-        <div className="flex-1 min-w-0 p-12 flex flex-col justify-center bg-white print:p-10">
+        <div className="flex-1 min-w-0 p-8 flex flex-col justify-center bg-white print:p-6">
           <div className="mb-10">
             <h2 className="font-cinzel text-display font-bold text-navy mb-6 leading-tight">
               UAE Legal Expertise
@@ -76,7 +76,7 @@ export const RegionalExpertisePage = () => {
           </div>
 
           {/* UAE Business Focus */}
-          <div className="mt-10 p-6 bg-navy/5 rounded-lg border-l-4 border-gold-accent print:mt-8 print:p-4">
+          <div className="mt-6 p-4 bg-navy/5 rounded-lg border-l-4 border-gold-accent print:mt-4 print:p-3">
             <p className="font-montserrat text-body text-navy font-medium">
               "Precedential Legal Consultancy is licensed and based in the UAE, 
               providing authentic local expertise with global standards."
