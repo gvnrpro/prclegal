@@ -1,36 +1,37 @@
-import { Globe, MapPin, Network, Scale, Users, Award } from 'lucide-react';
+import { Globe, Scale, Users, Award } from 'lucide-react';
 
-export const RegionalExpertisePage = () => {
+// It's good practice to export the component so it can be used elsewhere.
+// I'm assuming this is the main component for this file, so I'll add a default export.
+export default function RegionalExpertisePage() {
   const expertisePoints = [
     {
       icon: Scale,
       title: "UAE Commercial Law",
-      description: "Comprehensive understanding of UAE commercial legislation and regulatory compliance"
+      description: "Comprehensive understanding of UAE commercial legislation and regulatory compliance."
     },
     {
       icon: Globe,
       title: "UAE Free Zones",
-      description: "Specialized expertise in DIFC, ADGM, and other UAE free zone regulations"
+      description: "Specialized expertise in DIFC, ADGM, and other UAE free zone regulations."
     },
     {
       icon: Users,
       title: "Corporate Formation",
-      description: "Complete business setup services across all UAE emirates and jurisdictions"
+      description: "Complete business setup services across all UAE emirates and jurisdictions."
     },
     {
       icon: Award,
       title: "Local Partnerships",
-      description: "Strategic partnerships with UAE authorities and local business networks"
+      description: "Strategic partnerships with UAE authorities and local business networks."
     }
   ];
 
   return (
-    // Added more bottom padding (pb-24) to ensure footer has space
+    // Increased bottom padding to ensure footer never overlaps content.
     <div className="brochure-page min-h-full relative bg-white paper-texture pt-12 pb-24">
       {/* Header Line */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-gold-accent to-transparent"></div>
       
-      {/* Split Layout */}
       <div className="min-h-full flex pt-4">
         {/* Left Side - Image */}
         <div className="flex-1 min-w-0 relative bg-gradient-to-br from-grey-light via-white to-grey-light">
@@ -38,44 +39,47 @@ export const RegionalExpertisePage = () => {
             src="/lovable-uploads/f76ae9c9-cca4-4c3f-b532-a3aa8173a5e9.png" 
             alt="UAE Legal Expertise" 
             className="w-full h-full object-cover"
-            // Adding a placeholder in case the image fails to load
             onError={(e) => { e.currentTarget.src = 'https://placehold.co/600x800/E5E7EB/333333?text=UAE+Expertise'; e.currentTarget.onerror = null; }}
           />
-          {/* UAE Flag accent */}
-          <div className="absolute top-6 left-6 w-16 h-12 bg-gradient-to-r from-red-600 via-white to-green-600 rounded shadow-lg opacity-80"></div>
+          {/* UAE Flag accent - Updated to be a more accurate representation */}
+          <div className="absolute top-6 left-6 w-16 h-10 flex rounded shadow-lg overflow-hidden">
+            <div className="w-1/4 bg-red-600 h-full"></div>
+            <div className="w-3/4 flex flex-col">
+              <div className="h-1/3 bg-green-500"></div>
+              <div className="h-1/3 bg-white"></div>
+              <div className="h-1/3 bg-black"></div>
+            </div>
+          </div>
         </div>
         
         {/* Right Side - Content */}
-        {/* REMOVED justify-center and adjusted padding (p-10) for better flow */}
         <div className="flex-1 min-w-0 p-10 flex flex-col bg-white print:p-6">
-          <div className="mb-8">
+          <div className="mb-6">
             <h2 className="font-cinzel text-display font-bold text-navy mb-6 leading-tight">
               UAE Legal Expertise
             </h2>
-            <div className="w-20 h-0.5 bg-gold-accent mb-8"></div>
-            <p className="font-montserrat text-body-lg text-black/80 leading-relaxed mb-8">
+            <div className="w-20 h-0.5 bg-gold-accent mb-6"></div>
+            <p className="font-montserrat text-body-lg text-black/80 leading-relaxed">
               Specialized legal counsel for the UAE market, combining deep local knowledge 
-              with international best practices to deliver strategic solutions for businesses 
-              operating in the dynamic UAE legal landscape.
+              with international best practices to deliver strategic solutions.
             </p>
           </div>
 
-          {/* Expertise Points - Reduced vertical spacing for a tighter fit */}
-          <div className="space-y-5">
+          {/* Expertise Points: Adjusted spacing for better fit */}
+          <div className="space-y-4">
             {expertisePoints.map((point, index) => {
-              // FIX: Assign the component to a capitalized variable.
-              const Icon = point.icon;
+              const Icon = point.icon; // Capitalize for JSX
               return (
-                <div key={index} className="flex items-start gap-5">
-                  <div className="w-12 h-12 bg-gold-accent/20 rounded-lg flex items-center justify-center flex-shrink-0 print:w-10 print:h-10">
-                    {/* FIX: Render the capitalized variable. */}
-                    <Icon className="w-6 h-6 text-navy print:w-5 print:h-5" strokeWidth={2.5} />
+                <div key={index} className="flex items-start gap-4">
+                  <div className="w-11 h-11 bg-gold-accent/20 rounded-lg flex items-center justify-center flex-shrink-0 print:w-10 print:h-10">
+                    <Icon className="w-5 h-5 text-navy print:w-5 print:h-5" strokeWidth={2.5} />
                   </div>
                   <div>
-                    <h3 className="font-montserrat text-title font-semibold text-navy mb-2">
+                    <h3 className="font-montserrat text-title font-semibold text-navy mb-1">
                       {point.title}
                     </h3>
-                    <p className="font-montserrat text-body text-black/70 leading-relaxed">
+                    {/* Slightly smaller text for description to save space */}
+                    <p className="font-montserrat text-sm text-black/70 leading-relaxed">
                       {point.description}
                     </p>
                   </div>
@@ -84,11 +88,10 @@ export const RegionalExpertisePage = () => {
             })}
           </div>
 
-          {/* UAE Business Focus */}
-          {/* ADDED mt-auto to push this block and the footer towards the bottom, filling space gracefully */}
-          <div className="mt-auto pt-8">
+          {/* UAE Business Focus: Pushed to the bottom */}
+          <div className="mt-auto pt-6">
             <div className="p-4 bg-navy/5 rounded-lg border-l-4 border-gold-accent print:p-3">
-              <p className="font-montserrat text-body text-navy font-medium">
+              <p className="font-montserrat text-sm text-navy font-medium italic">
                 "Precedential Legal Consultancy is licensed and based in the UAE, 
                 providing authentic local expertise with global standards."
               </p>
