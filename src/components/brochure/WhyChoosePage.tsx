@@ -35,7 +35,7 @@ export const WhyChoosePage = () => {
   ];
 
   return (
-    <div className="brochure-page h-full relative bg-white paper-texture print:bg-white">
+    <div className="brochure-page h-full relative bg-white paper-texture print:bg-white pt-8 pb-16">
       {/* Professional header with legal accent */}
       <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-gold-accent to-transparent"></div>
       
@@ -49,9 +49,9 @@ export const WhyChoosePage = () => {
       </div>
       
       {/* Content optimized for print */}
-      <div className="p-12 h-full flex flex-col justify-center print:p-10">
+      <div className="px-8 py-4 h-full flex flex-col justify-center">
         {/* Main Headline */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-6">
           <h1 className="font-cinzel text-display font-bold text-navy mb-4 leading-tight">
             Why Choose Precedential
           </h1>
@@ -59,20 +59,20 @@ export const WhyChoosePage = () => {
         </div>
 
         {/* Professional quote */}
-        <div className="text-center mb-12 p-6 border-l-4 border-gold-accent bg-navy/5 rounded-r-lg">
+        <div className="text-center mb-6 p-4 border-l-4 border-gold-accent bg-navy/5 rounded-r-lg">
           <p className="font-montserrat text-body text-navy italic font-medium">
             "Excellence in legal counsel through comprehensive expertise and unwavering commitment to client success"
           </p>
         </div>
 
         {/* Advantages Grid - Print optimized */}
-        <div className="grid grid-cols-3 gap-6 mb-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-3 gap-4 mb-6 max-w-6xl mx-auto">
           {advantages.map((advantage, index) => (
-            <div key={index} className="text-center p-6 bg-white rounded-lg border border-gold-accent/30 shadow-sm print:p-4 print:shadow-none">
-              <div className="w-12 h-12 bg-gold-accent rounded-full mx-auto mb-4 flex items-center justify-center print:w-10 print:h-10">
-                <advantage.icon className="w-6 h-6 text-navy print:w-5 print:h-5" strokeWidth={2.5} />
+            <div key={index} className="text-center p-4 bg-white rounded-lg border border-gold-accent/30 shadow-sm print:p-3 print:shadow-none">
+              <div className="w-10 h-10 bg-gold-accent rounded-full mx-auto mb-3 flex items-center justify-center print:w-8 print:h-8">
+                <advantage.icon className="w-5 h-5 text-navy print:w-4 print:h-4" strokeWidth={2.5} />
               </div>
-              <h3 className="font-montserrat text-title font-semibold text-navy mb-3">
+              <h3 className="font-montserrat text-title font-semibold text-navy mb-2">
                 {advantage.title}
               </h3>
               <p className="font-montserrat text-body text-black/80 leading-relaxed">
@@ -82,7 +82,7 @@ export const WhyChoosePage = () => {
           ))}
         </div>
 
-        <div className="mt-6 w-32 h-0.5 bg-gold-accent mx-auto"></div>
+        <div className="mt-4 w-32 h-0.5 bg-gold-accent mx-auto"></div>
       </div>
 
       {/* Footer */}

@@ -25,12 +25,12 @@ export const RegionalExpertisePage = () => {
   ];
 
   return (
-    <div className="brochure-page min-h-full relative bg-white paper-texture">
+    <div className="brochure-page min-h-full relative bg-white paper-texture pt-8 pb-16">
       {/* Header Line */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-gold-accent to-transparent"></div>
       
       {/* Split Layout */}
-      <div className="min-h-full flex">
+      <div className="min-h-full flex pt-4">
         {/* Left Side - Image */}
         <div className="flex-1 min-w-0 relative bg-gradient-to-br from-grey-light via-white to-grey-light">
           <img 
@@ -57,7 +57,7 @@ export const RegionalExpertisePage = () => {
           </div>
 
           {/* Expertise Points */}
-          <div className="space-y-8">
+          <div className="space-y-6">
             {expertisePoints.map((point, index) => (
               <div key={index} className="flex items-start gap-5">
                 <div className="w-12 h-12 bg-gold-accent/20 rounded-lg flex items-center justify-center flex-shrink-0 print:w-10 print:h-10">
